@@ -145,7 +145,7 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #009EE3;
+	color: rgba(232,170,53,0.9);
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -337,6 +337,11 @@ h1.navbar-brand {
 .btn-vini-slider
 {
     background-color: rgba(232,170,53,0.7);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
 }
 
 .sl-slide,
@@ -524,25 +529,47 @@ h1.navbar-brand {
 ==================================================================*/
 
 #about {
-    background-color: #009EE3;
+    background-color: rgba(232,170,53,0.7);
     color: #fff;
+}
+#about .welcome-block .btn-effect
+{
+   color: rgba(0,0,82,0.7);
+    border-color: rgba(0,0,82,0.7);
+}
+
+#about .welcome-block .btn-effect:hover
+{
+   color: rgb(232,170,53);
+    border-color: rgb(232,170,53);
 }
 
 #about h3 {
-    color: #fff;
+    color: #000054;
     margin: 0 0 35px;
     text-transform: uppercase;
 }
 
 #about .welcome-block h3 {
     margin: 0 0 65px;
+    text-align: center;
 }
 
-#about .welcome-block img {
+#about .welcome-block #img-aseseo {
     border: 3px solid #fff;
     border-radius: 50%;
     margin-right: 35px;
     max-width: 100px;
+}
+
+#about .welcome-block #img-oaxaca-mapa 
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    display:block;
 }
 
 #about .message-body {
@@ -563,10 +590,17 @@ h1.navbar-brand {
 }
 
 .owl-buttons {
-    border: 2px solid #fff;
+    border: 2px solid rgba(0,0,82,0.7);
     display: inline-block;
     float: right;
     padding: 1px 8px 5px;
+    color: rgba(0,0,82,0.7);
+}
+
+.owl-buttons:hover {
+    border-color: rgba(232,170,53,0.9);
+    color: white;
+    background-color: rgba(232,170,53,0.9);
 }
 
 .owl-buttons > div {
@@ -633,6 +667,36 @@ h1.navbar-brand {
     text-transform: uppercase;
 }
 
+#credit-card
+{
+    width: 100px;
+    height 50px;
+}
+
+#OurCourses-text
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#table-fees
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.table-fees
+{
+    border: solid 3px;
+    border-bottom: none;
+}
+.table-fees-title
+{
+    background-color: rgba(232,170,53,0.7);
+}
+.table-fees-bottom
+{
+    border: solid 3px;
+}
 /*=================================================================
 	Portfolio
 ==================================================================*/
@@ -1199,7 +1263,7 @@ textarea.form-control {
     }
 
 /* about */
-    .recent-works {
+    .About-us {
         margin-bottom: 50px;
     }
 
@@ -1289,7 +1353,7 @@ textarea.form-control {
     }
 
 /* about */
-    .recent-works {
+    .About-us {
         margin-bottom: 85px;
     }
 
@@ -1300,6 +1364,7 @@ textarea.form-control {
 
     #about .owl-buttons {
         margin-top: 20px;
+        color:rgba(0,0,82,0.7);
     }
 
     #about .message-body {
